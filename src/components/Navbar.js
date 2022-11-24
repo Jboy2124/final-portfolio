@@ -21,7 +21,7 @@ const Navbar = () => {
                             {menu.map(items => {
                                 return(
                                     <li key={items.id} className='cursor-pointer font-poppins text-[15px] text-gray-100 hover:text-pink-600 duration-300'>
-                                        <Link to={items.link} smooth={true} duration={400}>
+                                        <Link to={items.link} smooth={true} offset={-40} duration={400}>
                                             {items.name}
                                         </Link>
                                     </li>
