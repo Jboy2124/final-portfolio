@@ -1,8 +1,8 @@
 import React from 'react'
 
-const SocialMedia = ({ name, iconName }) => {
+const SocialMedia = ({ key, name, iconName }) => {
   return (
-    <div className='h-[40px] w-[40px] hover:w-[120px] flex justify-end items-center duration-500 hover:bg-pink-600 group rounded-r'>
+    <div key={key} className='flex justify-end w-[125px] ml-[-85px] hover:ml-[-10px] items-center duration-500 hover:bg-pink-600 rounded-r group'>
         <div className='flex justify-start items-center'>
             <div className='flex justify-center items-center h-[40px]'>
                 <span className='text-[14px] text-gray-100 font-poppins font-semibold'>{name}</span>
