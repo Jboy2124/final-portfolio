@@ -1,11 +1,29 @@
 import React from 'react'
+import ProjectsCard from '../cards/ProjectsCard'
+import { proj } from '../utils/proj-utils'
 
 const Projects = () => {
   return (
-    <div name='projects' className='bg-gray-200'>
+    <div name='projects' className='bg-[#E0C097]'>
         <div className='container mx-auto'>
-            <div className='min-h-screen flex justify-center items-center'>
-                <span>Projects</span>
+            <div className='min-h-screen flex flex-col justify-center items-center'>
+                  <div className='w-full flex justify-center items-center'>
+                      <span className='text-[20px] text-gray-600 font-poppins font-semibold'>PROJECTS</span>
+                  </div>
+                  <div className='min-h-[70vh] w-full grid mobile:grid-cols-1  tablet:grid-cols-2 laptop:grid-cols-3 desktop:grid-cols-4 place-items-center gap-5 p-10'>
+                      {proj.map(items => {
+                        return(
+                          <div key={items.id}>
+                              <ProjectsCard 
+                                  type={items.type}
+                                  projName={items.projName}
+                                  stack={items.stack}
+                                  others={items.others}
+                              />
+                          </div>
+                        )
+                      })}
+                  </div>
             </div>
         </div>
     </div>
