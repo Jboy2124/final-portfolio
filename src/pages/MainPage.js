@@ -9,7 +9,7 @@ import WorkExperience from '../components/WorkExperience'
 
 const MainPage = () => {
   return (
-    <div className='bg-gray-200'>
+    <div className='bg-white'>
         <Navbar />
         <Hero />
         <WorkExperience />

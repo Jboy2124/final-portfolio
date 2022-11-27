@@ -4,13 +4,13 @@ import { workExp } from '../utils/work-utils'
 
 const WorkExperience = () => {
   return (
-    <div name='work-experience' className='bg-white'>
-        <div className='container mx-auto'>
-            <div className='min-h-screen flex flex-col justify-center items-center'>
-                <div className='min-h-[8vh] flex justify-center items-center'>
-                    <span className='text-[20px] text-[#001D6E] font-poppins font-semibold'>WORK EXPERIENCES</span>
+    <div name='work-experience' className='min-h-screen'>
+    <div className='container mx-auto'>
+        <div className='min-h-[90vh] flex flex-col items-center'>
+                <div className='min-h-[8vh] flex justify-center items-center pt-10'>
+                    <span className='text-[20px] text-[#5C3D2E] font-poppins font-bold'>WORK EXPERIENCES</span>
                 </div>
-                <div className='grid mobile:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 desktop:grid-cols-4 place-items-center gap-5 mx-10'>
+                <div className='grid mobile:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 desktop:grid-cols-4 place-items-center gap-5 mx-10 pt-10'>
                   {workExp.map(items => {
                     return(
                       <div key={items.id}>
@@ -24,9 +24,9 @@ const WorkExperience = () => {
                     )
                   })}
                 </div>
-            </div>
         </div>
     </div>
+</div>
   )
 }
 
