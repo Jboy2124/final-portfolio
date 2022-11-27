@@ -30,7 +30,7 @@ export const proj = [
     {
         id: 5,
         type: 'Desktop Application',
-        projName: 'Corporate System (HRIS, Warehouse, ...)',
+        projName: 'HRIS, Warehouse',
         stack: 'Visual Studio C#, .Net Framewok, Syncfusion, MySQL',
         others: 'SAP Crystal Report, SQLite'
     },
