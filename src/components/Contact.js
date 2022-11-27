@@ -8,7 +8,7 @@ const Contact = () => {
                 <form action='https://getform.io/f/627036ad-5d7f-4098-86da-a872ee7a4629' method='POST'>
                     <div className='relative rounded mobile:w-[350px] w-[600px] h-[450px] bg-[#E0C097] shadow-lg'>
                         <div className='w-full h-[50px] bg-[#B85C38] flex justify-center items-center rounded-t'>
-                            <span className='text-[16px] text-[#E0C097] font-poppins font-semibold'>Send Message</span>
+                            <span className='text-[16px] text-[#E0C097] font-poppins font-semibold'>Send Me A Message</span>
                         </div>
                         <div className='w-full h-[35px] mt-10 px-10'>
                             <input type='text' name='name' placeholder='Name' className='w-full h-full px-2 outline-none text-[15px] font-poppins rounded' />

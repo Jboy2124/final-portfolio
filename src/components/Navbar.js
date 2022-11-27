@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { menu } from '../utils/menu-utils'
 import { Link } from 'react-scroll'
+import DL from '../assets/download/ResumeJBAbecia.pdf'
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(true)
@@ -30,7 +31,9 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className='mobile:hidden tablet:hidden rounded px-8 py-2 cursor-pointer bg-[#B85C38] hover:bg-[#5C3D2E] duration-300'>
-                        <button className='text-[#E0C097] font-poppins text-[15px]'>Download CV</button>
+                        <button className='text-[#E0C097] font-poppins text-[15px]'>
+                            <a href={DL} download>Download CV</a>
+                        </button>
                     </div>
                     <div className='desktop:hidden laptop:hidden text-[23px] text-[#B85C38] hover:text-[#5C3D2E] cursor-pointer'>
                         <div onClick={() => { setShowMenu(value => !value) }}>
@@ -53,7 +56,9 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className={`flex justify-center items-center pr-3 pb-3 ${(showMenu) ? 'hidden':'block'}`}>
-                <button className='rounded px-10 py-2 bg-[#B85C38] hover:bg-[#5C3D2E] text-[#E0C097] text-[14px] font-poppins'>Download CV</button>
+                <button className='rounded px-10 py-2 bg-[#B85C38] hover:bg-[#5C3D2E] text-[#E0C097] text-[14px] font-poppins'>
+                    <a href={DL} download>Download CV</a>
+                </button>
             </div>
         </div>
     </div>
