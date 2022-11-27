@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className='bg-[#E0C097] fixed top-0 left-0 right-0'>
         <div className='container mx-auto'>
-            <div className='w-full h-[90px] flex justify-between items-center'>
+            <div className='w-full h-[80px] flex justify-between items-center'>
                 <div className='text-[35px] text-[#5C3D2E] font-poppins font-semibold'>
                     <Link to='hero-section' smooth={true} duration={400} className='cursor-pointer'>
                         portfolio
